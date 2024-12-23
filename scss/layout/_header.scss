@@ -1,0 +1,59 @@
+.header {
+  padding-top: 2.7rem;
+  padding-bottom: 2.7rem;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+
+    .properties {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .site-logo-image {
+      margin-right: 2rem;
+    }
+
+    .sitenav {
+      display: flex;
+      justify-content: space-between;
+
+      .sitenav-list {
+        display: flex;
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: $main-lh;
+        margin-right: 1.8rem;
+
+        .sitenav-link {
+          color: $dark-secondary-color;
+        }
+      }
+    }
+
+    .categories {
+      display: flex;
+      justify-content: space-between;
+
+      .number {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: $main-lh;
+        color: $dark-secondary-color;
+        margin-top: 1.2rem;
+        margin-right: 2.4rem;
+      }
+    }
+
+    .dark-mode {
+      margin-bottom: 1rem;
+      margin-right: 1.6rem;
+    }
+
+    .btn {
+      margin-left: 2.6rem;
+    }
+  }
+}
