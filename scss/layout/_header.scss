@@ -1,59 +1,79 @@
-.header {
+#header {
   padding-top: 2.7rem;
   padding-bottom: 2.7rem;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.properties {
+  display: flex;
+}
 
-  .header-container {
-    display: flex;
-    justify-content: space-between;
+.site-logo-image {
+  margin-right: 2rem;
+}
 
-    .properties {
-      display: flex;
-      justify-content: space-between;
-    }
+.sitenav {
+  display: flex;
+}
 
-    .site-logo-image {
-      margin-right: 2rem;
-    }
+.sitenav-list:hover .hidden-nav {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
 
-    .sitenav {
-      display: flex;
-      justify-content: space-between;
+.sitenav-list:hover .sitenav-image {
+  transform: rotateX(180deg);
+}
 
-      .sitenav-list {
-        display: flex;
-        margin-top: 1rem;
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: $main-lh;
-        margin-right: 1.8rem;
+.hidden-nav {
+  display: block;
+  padding: 1rem;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  border-radius: 20px;
+}
+.sitenav-list {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: $main-lh;
+  margin-right: 1.8rem;
+}
+.sitenav-link {
+  color: var(--secondary-color);
+}
 
-        .sitenav-link {
-          color: $dark-secondary-color;
-        }
-      }
-    }
+.categories {
+  display: flex;
+  justify-content: space-between;
+}
+.number {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: $main-lh;
+  color: var(--secondary-color);
+  margin-top: 1.2rem;
+  margin-right: 2.4rem;
+}
 
-    .categories {
-      display: flex;
-      justify-content: space-between;
+.header__theme__toggler {
+  background-color: var(--slate-color);
+  padding: 2.2rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 0;
+  cursor: pointer;
+  margin-right: 1.6rem;
+}
 
-      .number {
-        font-size: 1.8rem;
-        font-weight: 600;
-        line-height: $main-lh;
-        color: $dark-secondary-color;
-        margin-top: 1.2rem;
-        margin-right: 2.4rem;
-      }
-    }
-
-    .dark-mode {
-      margin-bottom: 1rem;
-      margin-right: 1.6rem;
-    }
-
-    .btn {
-      margin-left: 2.6rem;
-    }
-  }
+.btn {
+  margin-left: 2.6rem;
 }
