@@ -201,7 +201,6 @@ a {
   justify-content: space-between;
   margin-top: 15px;
   gap: 10px;
-  background-color: var(--background-color);
 }
 .footer .footer-container .scroll {
   margin-left: auto;
