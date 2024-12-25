@@ -111,8 +111,11 @@ a {
   display: flex;
 }
 
-.sitenav-list:hover .hidden-nav {
+.sitenav-list {
   position: relative;
+}
+
+.sitenav-list:hover .hidden-nav {
   opacity: 1;
   visibility: visible;
 }
